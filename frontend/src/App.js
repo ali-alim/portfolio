@@ -1,7 +1,15 @@
+import {About, Footer, Header, Skills, Testimonial, Work} from "./container"
 
 function App() {
   return (
-    <h1>APP</h1>
+    <div className="app">
+        <Header />
+        <About />
+        <Work />
+        <Skills />
+        <Testimonial />
+        <Footer />
+    </div>
   );
 }
 
