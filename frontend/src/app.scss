@@ -43,3 +43,17 @@
     align-items: center;
 }
 
+.app__bold-text{
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--black-color);
+    text-align-last: left;
+
+    @media screen and (min-width: 2000px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 450px){
+        font-size: 0.9rem;
+    }
+}
