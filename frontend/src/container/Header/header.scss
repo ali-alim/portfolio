@@ -118,11 +118,6 @@
   }
 
   @media screen and (min-width: 2000px) {
-    div:nth-child(1) {
-      width: 200px;
-      height: 200px;
-    }
-
     div:nth-child(2) {
       width: 400px;
       height: 400px;
@@ -132,18 +127,23 @@
       width: 170px;
       height: 170px;
     }
+
+    div:nth-child(1) {
+      width: 200px;
+      height: 200px;
+    }
   }
 
-  @media screen and (max-width:1200px) {
-      width: 100%;
-        flex-wrap: wrap;
-        margin-left: 0;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0;
 
-        div{
-            margin: 1rem;
-        }
+    div {
+      margin: 1rem;
     }
-
+  }
 }
 
 .header-img {
