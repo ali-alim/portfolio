@@ -5,23 +5,23 @@ import "./header.scss"
 
 const Header = () => {
   return (
-    <div className='header flex'>
+    <div className='header app__flex'>
       <motion.div
       whileInView={{x:[-100,0],opacity:[0,1]}}
       transition={{duration:0.5}}
       className="header-info"
       >
         <div className="header-badge">
-          <div className="badge-cmp flex">
+          <div className="badge-cmp app__flex">
             <span>👋</span>
             <div style={{marginLeft:20}}>
-            <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Ali</h1>
+            <p className="app__p-text">Hello, I am</p>
+            <h1 className="app__head-text">Ali</h1>
             </div>
           </div>
-          <div className="tag-cmp flex">
-            <p className="p-text">Web Developer</p>
-            <p className="p-text">Freelancer</p>
+          <div className="tag-cmp app__flex">
+            <p className="app__p-text">Web Developer</p>
+            <p className="app__p-text">Freelancer</p>
           </div>
         </div>
       </motion.div>
