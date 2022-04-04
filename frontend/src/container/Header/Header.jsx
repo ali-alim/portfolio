@@ -17,7 +17,7 @@ const Header = () => {
             <span>👋</span>
             <div style={{marginLeft: 20}}>
             <p className="app__p-text">Hello, I am</p>
-            <h1 className="app__head-text">Ali</h1>
+            <h1 className="app__head-text">Ali Mamedov</h1>
             </div>
           </div>
 
@@ -26,7 +26,7 @@ const Header = () => {
             <p className="app__p-text">Freelancer</p>
           </div>
         </div>
-        
+
       </motion.div>
     
       <motion.div

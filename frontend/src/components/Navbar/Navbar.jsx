@@ -12,6 +12,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
+        ALI MAMEDOV
         {/* <img
           src={images.logo}
           height={130}
