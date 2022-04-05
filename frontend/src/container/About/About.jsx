@@ -1,39 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import {urlFor, client} from '../../client'
+import { urlFor, client } from "../../client";
 import { AppWrap } from "../../wrapper";
 
 import "./about.scss";
 
-
-
 const About = () => {
-
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
     const query = '*[_type == "abouts"]';
 
-    client.fetch(query)
-    .then((data) => setAbouts(data));
-    
+    client.fetch(query).then((data) => setAbouts(data));
   }, []);
-  
-
 
   return (
     <>
       <h2 className="app__head-text">
-      <span>What separates design from </span><span>art</span>
+        <span>What separates design from </span>
+        <span>art</span>
         <br />
         is that design{" "}
         <span>
           <br />
-          is meant to be...</span> 
-          <br />
-          functional!
-        
+          is meant to be...
+        </span>
+        <br />
+        functional!
       </h2>
+
       <div className="about__profiles">
         {abouts.map((about, index) => (
           <motion.div
@@ -41,7 +36,7 @@ const About = () => {
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.2, type: "tween" }}
             className="about__profile-item"
-            key={`about.title-${index}`}
+            key={about.title + index}
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
             <h2 className="app__bold-text" style={{ marginTop: 20 }}>
@@ -58,4 +53,4 @@ const About = () => {
 };
 
 // export default About;
-export default AppWrap(About,'about');
+export default AppWrap(About, 'about');
