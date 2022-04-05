@@ -1,22 +1,17 @@
 
-const NavigationDots = ({active}) => {
-  return (
+const NavigationDots = ({active}) => (
     <div className="app__navigation">
         {
-            ['home', 'about', 'work', 'skills', 'testimonials', 'contact']
+            ['home', 'about', 'work', 'skills', 'testimonial', 'contact']
             .map((item,index) => (
                     <a 
-                    key={item-index}
+                    key={item + index}
                     className="app__navigation-dot"
-                    href={`#${item}`} onClick={() => setToggle(false)}
-                    // style={active == item ? {background: '#313BAC'} : {} }
-                    >
-                        {item}
-                    </a>
-            ))
-        }
+                    href={`#${item}`}
+                    style={active === item ? {backgroundColor: '#313BAC'} : {} }
+                    />
+            ))}
     </div>
   )
-}
 
 export default NavigationDots
