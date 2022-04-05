@@ -6,26 +6,9 @@ import {urlFor, client} from '../../client'
 import "./about.scss";
 
 // const abouts = [
-//   {
-//     title: "Frontend Development",
-//     description: "I am good at FrontEnd Development",
-//     imgUrl: images.about01,
-//   },
-//   {
-//     title: "FullStack Development",
-//     description: "I use MERN stack for full stack development",
-//     imgUrl: images.about02,
-//   },
-//   {
-//     title: "Backend Development",
-//     description: "Node.js is my passion",
-//     imgUrl: images.about03,
-//   },
-//   {
-//     title: "Web Design",
-//     description: "Not so addicted",
-//     imgUrl: images.about04,
-//   },
+
+
+
 //   {
 //     title: "Web Development",
 //     description: "My passion as well",
