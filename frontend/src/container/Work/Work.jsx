@@ -20,10 +20,30 @@ const Work = () => {
       setFilterWork(data);
     })
   }, []);
+
   
 
   return (
-    <div>Work</div>
+    <>
+      <h2 className="app__head-text">
+        My <span>Portfolio</span> Section
+      </h2>
+
+      <div className="work-filter">
+        {
+          ['Web App, Mobile App, React JS, Node JS, All']
+          .map((item,index) => (
+            <div 
+            key={index}
+            onClick={() => handleWorkFilter(item)}
+            className={`work-filter-item app__flex app__p-text ${activeFilter === item ? 'item-active' : ''}`}
+            >
+            {item}
+            </div>
+          ))
+        }
+      </div>
+    </>
   )
 }
 
