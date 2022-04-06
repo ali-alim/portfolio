@@ -4,6 +4,18 @@ import { images } from "../../constants";
 import { AppWrap } from "../../wrapper";
 import "./header.scss";
 
+const scaleVariants = {
+  whileInView: {
+    scale: [0,1],
+    opacity: [0,1],
+    transition: {
+      duration: 1,
+      ease: 'easeInOut'
+    }
+  }
+}
+
+
 const Header = () => {
   return (
     <div className="header app__flex">
@@ -44,8 +56,8 @@ const Header = () => {
       </motion.div>
 
       <motion.div
-        // variants={scaleVariants}
-        // whileInView={scaleVariants.whileInView}
+        variants={scaleVariants}
+        whileInView={scaleVariants.whileInView}
         className="header-circles"
       >
         {[images.node, images.redux, images.sass].map((circle, index) => (

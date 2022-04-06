@@ -1,18 +1,17 @@
-#home{
+#home {
   position: relative;
   background: url("../../assets//bgIMG.png");
   background-repeat: cover;
   background-position: center;
   background-repeat: repeat;
 
-  .app__wrapper{
+  .app__wrapper {
     padding: 0;
 
-    .app__copyright{
+    .app__copyright {
       display: none;
     }
   }
-
 }
 
 .header {
