@@ -36,6 +36,10 @@
     }
 }
 
+.app__whitebg{
+    background-color: var(--white-color);
+}
+
 .app__navigation{
     display: flex;
     justify-content: center;
