@@ -19,6 +19,7 @@ const Work = () => {
       setFilterWork(data);
     });
   }, []);
+  
 
   return (
     <>
@@ -27,7 +28,7 @@ const Work = () => {
       </h2>
 
       <div className="work-filter">
-        {["Web App, Mobile App, React JS, Node JS, All"].map((item, index) => (
+        {['Web App', 'Mobile App', 'React JS', 'Node JS', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
