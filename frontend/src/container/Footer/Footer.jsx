@@ -12,7 +12,28 @@ const Footer = () => {
 
   const {username, email, message} = formData;
 
-  
+  const handleChangeInput = (e) => {
+    const {name, value} = e.target;
+    setFormData({...formData, [name]:value});
+  };
+
+  const handleSubmit = () => {
+    setLoading(true);
+
+    const contact = {
+      _type: 'contact',
+      name: formData.username,
+      email: formData.email,
+      message: formData.message
+    }
+
+    client.create(contact)
+    .then(() => {
+      setLoading(false);
+      setIsFormSubmitted(true);
+    })
+    .catch((err) => console.log(err));
+  }
 
   return (
     <>
