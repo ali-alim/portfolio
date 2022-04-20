@@ -118,4 +118,4 @@ export default AppWrap(
   'works',
   'app__primarybg');
 
-  
+// export default Work;  

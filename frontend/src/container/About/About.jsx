@@ -17,16 +17,7 @@ const About = () => {
   return (
     <>
       <h2 className="app__head-text">
-        <span>What separates design from </span>
-        <span>art</span>
-        <br />
-        is that design{" "}
-        <span>
-          <br />
-          is meant to be...
-        </span>
-        <br />
-        functional!
+<span>Design</span> is meant to be ... <span>functional</span>
       </h2>
 
       <div className="about__profiles">

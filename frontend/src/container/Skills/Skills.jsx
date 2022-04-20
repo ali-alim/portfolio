@@ -50,6 +50,8 @@ const Skills = () => {
   )
 }
 
+
+// export default Skills;
 export default AppWrap(
   MotionWrap(Skills, 'skills'),
   'skills',

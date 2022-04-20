@@ -165,7 +165,7 @@
 .header-img {
   flex: 1;
   height: 100%;
-
+  
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -175,6 +175,7 @@
     width: 100%;
     object-fit: contain;
     z-index: 1;
+
   }
 
   .overlay_circle {

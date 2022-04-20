@@ -22,8 +22,9 @@
 //     align-items: center;
 
 //     img{
-//         width: 90px;
+//         // width: 60px;
 //         height: 40px;
+//         background-color:inherit;
     
 //         @media screen and (min-width:2000px) {
 //             width: 180px;
@@ -33,7 +34,6 @@
 // }
 
 .navbar-links{
-    
     flex: 1; 
     display: flex;
     justify-content: center;
