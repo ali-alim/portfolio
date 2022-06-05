@@ -13,10 +13,11 @@
 .app__copyright{
     width: 100%;
     padding: 2rem 0 0;
+    margin-right: 10px;
 
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    // justify-content: center;
     align-items: flex-end;
 
     p{
