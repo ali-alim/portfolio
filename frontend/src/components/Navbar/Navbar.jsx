@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { images } from "../../constants";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
@@ -11,13 +10,6 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      {/* <div className="navbar-logo">
-        <img
-          src={images.logo}
-          height={60}
-          alt="logo"
-        />
-      </div> */}
       <ul className="navbar-links">
         {["home", "about", "works", "skills","contact"].map((item) => (
           <li className="app__flex app__p-text" key={`link -${item}`}>

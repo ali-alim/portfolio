@@ -14,25 +14,6 @@
     
 }
 
-//Create SUPER logo 
-
-// .navbar-logo{
-//     display: flex;
-//     justify-content: flex-start;
-//     align-items: center;
-
-//     img{
-//         // width: 60px;
-//         height: 40px;
-//         background-color:inherit;
-    
-//         @media screen and (min-width:2000px) {
-//             width: 180px;
-//             height: 80px;
-//         }
-//     }
-// }
-
 .navbar-links{
     flex: 1; 
     display: flex;
@@ -53,14 +34,12 @@
             width:30px;
             height: 2px;
             background: transparent;
-            // border-radius: 50%;
             margin-bottom: 5px;
         }
         
         a{
             color: var(--gray-color);
             text-decoration: none;
-            // flex-direction: column;
             text-transform: uppercase;
             font-weight: 500;
             transition: all 0.3s ease-in-out;

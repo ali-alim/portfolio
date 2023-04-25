@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import { motion } from 'framer-motion'
-import ReactToolTip from 'react-tooltip'
 import { urlFor, client } from '../../client'
 import { AppWrap, MotionWrap } from '../../wrapper'
 import "./skills.scss"
@@ -9,16 +8,12 @@ import "./skills.scss"
 
 const Skills = () => {
 
-  const [experience, setExperience] = useState([]);
   const [skills, setSkills] = useState([]);
 
   useEffect(()=>{
 
     const query = '*[_type == "experiences"]';
     const skillsQuery = '*[_type == "skills"]';
-
-    client.fetch(query)
-    .then((data) => setExperience(data));
 
     client.fetch(skillsQuery)
     .then((data) => setSkills(data));
@@ -51,7 +46,6 @@ const Skills = () => {
 }
 
 
-// export default Skills;
 export default AppWrap(
   MotionWrap(Skills, 'skills'),
   'skills',

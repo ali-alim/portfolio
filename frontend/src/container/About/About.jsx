@@ -17,7 +17,7 @@ const About = () => {
   return (
     <>
       <h2 className="app__head-text">
-<span>Design</span> is meant to be ... <span>functional</span>
+        <span>Design</span> is meant to be ... <span>functional</span>
       </h2>
 
       <div className="about__profiles">
@@ -44,7 +44,4 @@ const About = () => {
 };
 
 // export default About;
-export default AppWrap(
-  MotionWrap(About, 'about'),
-  'about',
-  "app__whitebg");
+export default AppWrap(MotionWrap(About, "about"), "about", "app__whitebg");

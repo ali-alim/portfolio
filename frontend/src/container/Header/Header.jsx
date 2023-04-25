@@ -15,7 +15,6 @@ const scaleVariants = {
   }
 }
 
-
 const Header = () => {
   return (
     <div className="header app__flex">
@@ -33,27 +32,11 @@ const Header = () => {
             </div>
           </div>
 
-          <div className="tag-cmp app__flex" >
-            <p className="app__p-text">Web Developer</p>
-            <p className="app__p-text">Freelancer</p>
+          <div className="tag-cmp" >
+            <p>React JS Developer</p>
           </div>
         </div>
       </motion.div>
-
-      {/* <motion.div
-        whileInView={{ opacity: [0, 1] }}
-        transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="header-img"
-      >
-      <img src={images.mern} alt="profile_bg" />
-        <motion.img
-          whileInView={{ scale: [0, 1] }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-          src={images.circle}
-          alt="profile_circle"
-          className="overlay_circle"
-        />
-      </motion.div> */}
 
       <motion.div
         variants={scaleVariants}
